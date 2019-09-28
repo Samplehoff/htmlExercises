@@ -1,0 +1,19 @@
+h1 {
+    font-size: 100px;
+}
+h2 {
+    color: crimson; 
+}
+
+p {
+    font-size: 22px;
+    color:blueviolet;
+}
+
+* {
+    font-size: 25px;
+}
+
+p {
+    font-size: 50px;
+}
