@@ -1,22 +1,16 @@
 <html>
+    <title>My Resume Site</title>
     <body>
         <h1>Sampey Hoffman</h1>
         <h2>Web Developer</h2>
-        <style>
-        p {
-            font-size: 22px;
-            color:blueviolet;
-        }
 
-        * {
-            font-size: 25px;
-        }
-
-        p {
-            font-size: 50px;
-        }
+        <link rel="stylesheet" type="text/css" href="testcss.css"/>
+        <script>
+            function otherPage() {
+                window.location.replace("index2.html");
+            }
+        </script>
         
-        </style>
         <p>
             <a style="color:crimson; font-size: 40px; color:blue;">click here</a>
 
@@ -24,14 +18,16 @@
         <p style="font-size: 40px; line-height: 60px; color:darkblue;">
             I have taken a chance on a career change to pursue a passion that I have had for a long time.<br /></p>
         <p>This is my first resume web-site. Hopefully it looks good and is easy to read</p>
-        
+        <div>
+            <a onclick= "otherPage()">click here</a>
+        </div>
 
         
-        <img width="300" height="400" src="/Users/SampleHoff/Desktop/pics/IMG_3561.jpeg"/>
-        <p><br /></p>
+        <img width="300" height="400" src="/Users/SampleHoff/Desktop/pics/IMG_3561.jpeg"/><br />
+        
         <a href="https://www.linkedin.com/in/sampey-hoffman-54211463"> <img width="100" height="100" src="/Users/SampleHoff/Desktop/pics/linkedin-image.png"/></a>
 
-        <P><b>These are some exercises that I have completed available on my Github page</b></P>
+        <P><b>These are some exercises that I have completed available on my<a onclick>Github</a></b></P>
         <ul>
             <li>Exercise #1</li>
                 
