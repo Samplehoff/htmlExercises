@@ -21,3 +21,18 @@ main {
     text-align: center;
     padding-top: 100px;
 }
+
+main h2 {
+    font-size: 18px;
+    text-align: center;
+    color: #bfbfbf
+}
+
+
+main h3 button {
+    background-color: blue;
+    color: #dafdfe;
+    height: 45px;
+    width: 200px;
+    font-size: 15px;
+}
