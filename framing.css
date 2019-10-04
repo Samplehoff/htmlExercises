@@ -1,0 +1,110 @@
+header {
+    margin: 30px;
+}
+/*
+.menu ul {
+    list-style: none;
+    background-color: aqua;
+    overflow: hidden;
+
+}
+
+.menu ul li {
+    float: left;
+    
+}
+
+.menu ul li a {
+    border: 1px solid black;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+*/
+
+.logo {
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.menu {
+    float: right;
+}
+
+.menu ul {
+    list-style: none;
+    background-color: aqua;
+}
+
+.menu ul li {
+    margin: 0;
+    display: inline-block;
+    
+}
+
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background-color: green;
+}
+
+.menu ul li a:visited {
+    color: black;
+}
+
+main {
+    background-color: rgba(50,50, 50, .02);
+}
+
+.content-container {
+    margin: 50px;
+}
+
+.image {
+    float: left;
+    border: 1px solid black;
+}
+
+.content {
+    display: inline-block;
+    margin-left: 20px;
+    width: 60%;
+    border: 1px solid black;
+
+}
+
+.footer-container {
+    width: 25%;
+    margin: 20px;
+    display: inline-block;
+}
+
+.copyright-notice {
+    text-align: center;
+}
+
+.search {
+    text-align: center;
+}
+
+.search-bar {
+    font-size: 25px;
+    width: 400px;
+    margin: 50px 0;
+    border: 2px solid green;
+}
+
+.my-button {
+    background-color: rgba(67, 98, 58, 0.833);
+    padding: 14px 16px;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+}

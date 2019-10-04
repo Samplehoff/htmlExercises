@@ -36,3 +36,11 @@ main h3 button {
     width: 200px;
     font-size: 15px;
 }
+
+p {
+    font-size: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 55px;
+    color: #3e3e3e;
+}
