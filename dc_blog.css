@@ -44,3 +44,24 @@ p {
     margin-top: 55px;
     color: #3e3e3e;
 }
+
+.bottom {
+    border-top: 1px solid black;
+    text-align: left;
+    font-size: 25px;
+    color: #929292;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 65px;
+    padding: 10px;
+    
+}
+
+.bottom span {
+    margin: 20px;
+}
+
+.copyright-notice {
+    padding: 50px;
+    text-align: center;
+}
