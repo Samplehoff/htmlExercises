@@ -1,5 +1,6 @@
 h1 {
     font-size: 100px;
+    color: firebrick
 }
 h2 {
     color: crimson; 
@@ -7,13 +8,48 @@ h2 {
 
 p {
     font-size: 22px;
-    color:blueviolet;
+    color: #b4a202;
+    background-color: grey;
+    
 }
 
-* {
-    font-size: 25px;
-}
+
 
 p {
     font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+#test-paragraph {
+    font-size: 100px;
+    color: chartreuse;
+
+}
+* {
+    background-image: url("https://www.google.com/imgres?imgurl=https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png&imgrefurl=https://en.wikipedia.org/wiki/Manchester_City_F.C.&h=1200&w=1200&tbnid=0pHqD1fY74yByM&tbnh=225&tbnw=225&usg=AI4_-kSUoZ2Fl8IhYO3InCayGH-G1slfiQ&vet=1&docid=MOe3UNlGe7UkRM")
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-left{
+    text-align: left;
+}
+
+.my-dotted-paragraph {
+    text-align: center;
+    border: 10px black dotted;
+    margin: 100px
+}
+
+div {
+    border: 5px red dashed;
+    padding: 20px;
+    width: 50%;
+}
+
+table td {
+    border: 2px solid black;
 }
