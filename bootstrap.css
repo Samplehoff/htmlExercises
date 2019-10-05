@@ -12,3 +12,14 @@
     height: 200px;
     background-color: yellow;
 }
+
+.row {
+    border-top: 1px solid black;
+    padding-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.background {
+    background-color: maroon;
+}
