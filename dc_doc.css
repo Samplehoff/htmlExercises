@@ -1,4 +1,8 @@
 header {
-    align-content: left;
-    background-color: #555555;
+
+    background-color: #555;
+    color: whitesmoke;
+    position: fixed;
+    float: left;
+    
 }
