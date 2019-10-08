@@ -14,12 +14,14 @@
 }
 
 .row {
-    border-top: 1px solid black;
+    border: 1px solid black;
     padding-top: 5px;
     margin-left: 10px;
     margin-right: 10px;
+    text-align: center;
 }
 
 .background {
     background-color: maroon;
 }
+
