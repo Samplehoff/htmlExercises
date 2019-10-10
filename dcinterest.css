@@ -1,0 +1,23 @@
+.top-bar {
+    background-color: gray;
+    padding-left: 45px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+    /* justify-content: space-around; */
+}
+.image-text {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    font-size: 30px;
+}
+
+.image {
+    position: relative;
+
+}
