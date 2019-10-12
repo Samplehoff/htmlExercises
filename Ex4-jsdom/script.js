@@ -1,4 +1,7 @@
 var myButton = document.getElementById("myButton");
-myButton.addEventListener("click", function() {
-    document.getElementsByClassName("box").style.backgroundColor="blue";
+var boxes = document.querySelectorAll(".box")
+
+myButton.addEventListener("click", function () {
+    console.log("here")
+    boxes.forEach(box => box.style.backgroundColor = "blue")
 })
