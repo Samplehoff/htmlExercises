@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Dog Website</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div id="actions">
+                    <input type="button" onclick="fetchDoggo(this)" value="Fetch Doggo...">
+                        
+                    <input type="button" onclick="fetchAllBreeds(this)" value="Fetch All Breeds..."> 
+                </div>
+                <div id="content">
+            
+            
+                </div>
+            </div>
+        </div>
+        <script>
+            async function fetchAllBreeds(){
+                let breeds = await fetch("https://dog.ceo/api/breeds/list/all");
+                let allBreeds = await 
+                console.log(breeds)
+            }
+
+
+
+            async function fetchDoggo(element) {
+                element.value = "Generating Doggo...";
+                
+                let response = await fetch("https://dog.ceo/api/breeds/image/random");
+                let responseObject = await response.json();
+                
+                let content = renderDoggo(responseObject);
+                document.getElementById("content").innerHTML += content;
+                element.value = "Fetch Doggo...";
+            }
+            
+            function renderDoggo(responseObject){
+                return `<img src="${responseObject.message}" style = "max-width:300px;"/>`
+            }
+        </script>
+        
+    </body>
+</html>
