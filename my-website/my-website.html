@@ -13,6 +13,9 @@
                         
                     <input type="button" onclick="fetchAllBreeds(this)" value="Fetch All Breeds..."> 
                 </div>
+                <div id="drop-down">
+
+                </div>
                 <div id="content">
             
             
@@ -22,8 +25,30 @@
         <script>
             async function fetchAllBreeds(){
                 let breeds = await fetch("https://dog.ceo/api/breeds/list/all");
-                let allBreeds = await 
-                console.log(breeds)
+                let allBreeds = await breeds.json();
+                console.log(allBreeds.message);
+
+                let content = dropdownContent(allBreeds);
+                document.getElementById("drop-down").innerHTML = content;
+            }
+
+            function dropdownContent(allBreeds) {
+                
+
+
+
+
+
+                let listBreeds = Object.keys(allBreeds.message)
+                console.log(listBreeds);
+                console.log(listBreeds[0]);
+
+                let dropDown = `<select>`;
+                    for (var = i; i = 0; ++i){
+                        dropdown += option;
+                    }
+
+                dropDown = `</select>`;
             }
 
 
