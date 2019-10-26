@@ -43,18 +43,28 @@
                 console.log(listBreeds);
                 console.log(listBreeds[0]);
 
-                let dropDown = `<select>`;
-                    for (var = i; i = 0; ++i){
-                        dropdown += option;
+                let dropDown = `<select id="breed-dropdown">`;
+                    for (var i = 0; i < listBreeds.length; i++){
+                        dropDown += `
+                        <option value="${listBreeds[i]}">${listBreeds[i]}</option>
+                        `;
                     }
 
-                dropDown = `</select>`;
+                dropDown += `</select>`;
+                return dropDown;
             }
 
 
 
             async function fetchDoggo(element) {
                 element.value = "Generating Doggo...";
+                let dropdownBreed = document.getElementById("breed-dropdown");
+                console.log(dropdownBreed);
+                if(dropdownBreed == null) {
+                    let response = await fetch("https://dog.ceo/api/breeds/image/random");
+                } else {
+                    let response = await fetch("https://dog.ceo/api/breeds/" + selectedbreed + "/images/random");
+                }
                 
                 let response = await fetch("https://dog.ceo/api/breeds/image/random");
                 let responseObject = await response.json();
