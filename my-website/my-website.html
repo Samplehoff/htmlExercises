@@ -61,12 +61,13 @@
                 let dropdownBreed = document.getElementById("breed-dropdown");
                 console.log(dropdownBreed);
                 if(dropdownBreed == null) {
-                    let response = await fetch("https://dog.ceo/api/breeds/image/random");
+                    var response = await fetch("https://dog.ceo/api/breeds/image/random");
                 } else {
-                    let response = await fetch("https://dog.ceo/api/breeds/" + selectedbreed + "/images/random");
+                    selectedbreed = dropdownBreed.selectedOptions[0].value;
+                    var response = await fetch("https://dog.ceo/api/breed/" + selectedbreed + "/images/random");
                 }
                 
-                let response = await fetch("https://dog.ceo/api/breeds/image/random");
+                
                 let responseObject = await response.json();
                 
                 let content = renderDoggo(responseObject);
